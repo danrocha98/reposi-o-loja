@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist de Reposição de Itens</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="./index.js" defer=""></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Checklist de Reposição de Itens</h1>
+    </header>
+    <main>
+      <section id="upload-section">
+        <h2>Upload de Relatório Diário</h2>
+        <input type="file" id="fileInput" accept=".xlsx">
+      </section>
+
+      <section id="checklist-section" style="display:none;">
+        <h2>Checklist de Produtos Vendidos</h2>
+        <ul id="checklist">
+          <!-- Itens do checklist serão inseridos aqui -->
+        </ul>
+      </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+    <script src="app.js"></script>
+
+
+  </body>
+
+</html>
